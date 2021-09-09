@@ -1,0 +1,31 @@
+{
+  "name": "cah-committee-cpt",
+  "version": "1.0.0",
+  "description": "A WordPress custom post type for CAH Committees",
+  "main": "cah-committees-cpt.php",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "npx node-minify --compressor terser --input ./src/js/cah-committees.js --output ./js/cah-committees.min.js && npx node-minify --compressor terser --input ./src/js/cah-committees-admin.js --output ./js/cah-committees-admin.min.js && npx node-minify --compressor clean-css --input ./src/css/cah-committees-admin.css --output ./css/cah-committees-admin.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cahweb/cah-committee-cpt.git"
+  },
+  "keywords": [
+    "WordPress",
+    "CPT",
+    "plugin"
+  ],
+  "author": "Mike W. Leavitt",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/cahweb/cah-committee-cpt/issues"
+  },
+  "homepage": "https://github.com/cahweb/cah-committee-cpt#readme",
+  "devDependencies": {
+    "node-minify": "^3.6.0"
+  }
+}
