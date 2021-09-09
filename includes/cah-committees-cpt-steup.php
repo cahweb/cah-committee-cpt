@@ -93,7 +93,7 @@ final class Committee extends WPCustomPostType implements WPCustomFieldsInterfac
     {
         global $post;
         if (!isset($post) || !is_object($post) || $post->post_name !== 'committees') {
-            return;
+            return $template;
         }
 
         if (stripos($template, 'page-committees.php') === false && !is_archive()) {
